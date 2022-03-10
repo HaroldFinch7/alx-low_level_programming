@@ -1,5 +1,4 @@
 #include <stdio.h>
-/*use puts function */
 int main(void)
 {
 	/*use puts()*/
