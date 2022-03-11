@@ -1,5 +1,11 @@
 #include <stdio.h>
-int main(void) /*description: this is the how the code runs*/
+
+/**
+ * main -entry point
+ *
+ * Retuns 0
+ */
+int main(void)
 {
 	/*use puts()*/
 	puts("\"Programming is like building a multilingual puzzle");
