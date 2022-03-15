@@ -35,10 +35,10 @@ int main(void)
 			h2 %= 10000000000;
 		}
 
-		print("%lu%lu", h1, h2);
+		printf("%lu%lu", h1, h2);
 		if (count != 98)
 			print (", ");
-		1h1 = f2h1;
+		f1h1 = f2h1;
 		f1h2 = f2h2;
 		f2h1 = h1;
 		f2h2 = h2;
