@@ -1,1 +1,1 @@
-variables if else while
+function learning
