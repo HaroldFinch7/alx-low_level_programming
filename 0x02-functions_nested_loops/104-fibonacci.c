@@ -43,7 +43,7 @@ int main(void)
 		f2h1 = h1;
 		f2h2 = h2;
 	}
-	print('\n');
+	printf('\n');
 
 	return (0);
 }
