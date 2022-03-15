@@ -4,7 +4,7 @@
  * main - print first 50 fibonacci numbers starting with 1 and 2
  * Return: Always 0
  */
-nt main(void)
+int main(void)
 {
 	int count;
 	unsigned long fib1 = 0, fib2 = 1, sum;
@@ -18,7 +18,7 @@ nt main(void)
 		fib2 = sum;
 
 		if (count == 49)
-			printf("\n"0);
+			printf("\n");
 		else
 			printf(", ");
 	}
