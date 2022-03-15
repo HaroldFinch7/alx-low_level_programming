@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_times_table -printstimes table
@@ -35,7 +36,7 @@ void print_times_table(int n)
 				{
 					_putchar((prod / 10) + '0');
 				}
-				_putchar((prof % 10) + '0');
+				_putchar((prod % 10) + '0');
 			}
 			_putchar('\n');
 		}
