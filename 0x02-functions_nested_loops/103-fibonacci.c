@@ -9,7 +9,7 @@ int main(void)
 	unsigned long fib1 = 0, fib2 = 1, fibsum;
 	float total;
 
-	while(true)
+	while(1)
 	{
 		fibsum = fib1 + fib2;
 		if (fibsum >4000000)
@@ -20,7 +20,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = fibsum;
 	}
-	pritntf("%.0f\n", total);
+	printf("%.0f\n", total);
 
 	return (0);
 }
