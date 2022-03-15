@@ -4,7 +4,7 @@
  * print_to_98 -prints to 98 separated by comma and space
  * @n: the number to start with
  */
-void print_to_98(int n_)
+void print_to_98(int n)
 {
 	if (n >= 98)
 	{
