@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - list all natural numbers below 1024,
+ * main - List all natural numbers below 1024,
  * that are multiples of 3 and 5
  *
- * Retun: Always 0.
+ * Return: Always 0.
  */
 int main(void)
 {
