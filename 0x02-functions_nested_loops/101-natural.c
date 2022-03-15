@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - list natural numbers below 1024,
- * multip0les of 3 and 5
+ * main - list all natural numbers below 1024,
+ * that are multiples of 3 and 5
  *
  * Retun: Always 0.
  */
