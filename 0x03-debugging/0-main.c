@@ -1,3 +1,4 @@
+cat > main.h
 #include "main.h"
 
 /**
