@@ -1,1 +1,1 @@
-function learning
+pointers and arrays

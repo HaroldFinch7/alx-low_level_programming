@@ -3,12 +3,11 @@
 #include "main.h"
 
 /**
- * 0-reset_to_98 - check the code 
- *
+ * reset_to_98 - updates value a parameter points to
+ * @p: pointer variable of type int
  * Return: Always void.
  */
 void reset_to_98(int *p)
 {
-    *p = 98;
-
+	*p = 98;
 }
