@@ -27,22 +27,22 @@ int main(__attribute__((__unused__)) int argc,  char *argv[])
 		coins++;
 		if ((cents - 25) >= 0)
 		{
-			cents = 25;
+			cents -= 25;
 			continue;
 		}
 		if ((cents - 10) >= 0)
 		{
-			cents = 10;
+			cents -= 10;
 			continue;
 		}
 		if ((cents - 5) >= 0)
 		{
-			cents = 5;
+			cents -= 5;
 			continue;
 		}
 		if ((cents - 2) >= 0)
 		{
-			cents = 2;
+			cents -= 2;
 			continue;
 		}
 		cents--;
