@@ -1,20 +1,374 @@
-int _putchar(char c);
-int _islower(int c);
-int _isalpha(int c);
-int _abs(int n);
-int _isupper(int c);
-int _isdigit(int c);
-int _strlen(char *s);
-void _puts(char *s);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-char *_memset(char *s, char b, unsigned int n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
+!<arch>
+0-isupper.o/    0           0     0     644     241       `
+#include "main.h"
+
+/**
+ * _isupper - checks if a character is lowercase
+ * @c: the character to be checked
+ * Return: 1 if lowercase and 0 otherwise.
+ */
+
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
+
+}
+
+0-memset.o/     0           0     0     644     539       `
+#include "main.h"
+#include <stddef.h>
+
+/**
+ * _memset - Fills the first n bytes of the memory area
+ *          pointed to by @s with the constant byte @c.
+ * @s: A pointer to the memory area to be filled.
+ * @c: The character to fill the memory area with.
+ * @n: The number of bytes to be filled.
+ *
+ * Return: A pointer to the filled memory area @s.
+ */
+char *_memset(char *s, char c, unsigned int n)
+{
+	unsigned int index;
+	char *memory = s, value = c;
+
+	for (index = 0; index < n; index++)
+		memory[index] = value;
+
+	return (memory);
+}
+
+0-strcat.o/     0           0     0     644     198       `
+#include "main.h"
+
+/**
+ * _strcat - Locates a substring.
+ * @dest: The string to be searched.
+ * @src: the second dtring
+ * Return: Always the integer
+ */
+
+char *_strcat(char *dest, char *src)
+{
+
+}
+1-isdigit.o/    0           0     0     644     241       `
+#include "main.h"
+
+/**
+ * _isdigit - checks if a character is an alphabet
+ * @c: the character to be checked
+ * Return: 1 if alphabet and 0 otherwise.
+ */
+
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
+
+1-memcpy.o/     0           0     0     644     572       `
+#include "main.h"
+
+/**
+ * _memcpy - Copies @n bytes from the memory area pointed
+ *           to by @src into that pointed to by @dest.
+ * @dest: A pointer to the memory area to copy @src into.
+ * @src: The source buffer to copy characters from.
+ * @n: The number of bytes to copy from @src.
+ *
+ * Return: A pointer to the destination buffer @dest.
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int index;
+	char *destination = dest;
+	char *source = src;
+
+	for (index = 0; index < n; index++)
+		destination[index] = source[index];
+
+	return (dest);
+}
+1-strncat.o/    0           0     0     644     225       `
+#include "main.h"
+
+/**
+ * _strncat - Locates a substring.
+ * @dest: The string to be searched.
+ * @src: the second dtring
+ * @n: an integer
+ * Return: Always the integer
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+
+}
+
+100-atoi.o/     0           0     0     644     151       `
+#include "main.h"
+
+/**
+ * _atoi - Locates a substring.
+ * @s: The string to be searched.
+ *
+ * Return: Always the integer
+ */
+
+int _atoi(char *s)
+{
+
+}
+
+2-strchr.o/     0           0     0     644     403       `
+#include "main.h"
+
+/**
+ * _strchr - Locates a character in a string.
+ * @s: The string to be searched.
+ * @c: The character to be located.
+ *
+ * Return: If c is found - a pointer to the first occurence.
+ *         If c is not found - NULL.
+ */
+char *_strchr(char *s, char c)
+{
+	int index;
+
+	for (index = 0; s[index] >= '\0'; index++)
+	{
+		if (s[index] == c)
+			return (s + index);
+	}
+
+	return ('\0');
+}
+
+2-strlen.o/     0           0     0     644     144       `
+#include "main.h"
+
+/**
+ * _strlen - Locates a substring.
+ * @s: The string to be searched.
+ *
+ * Return: nothing
+ */
+
+int _strlen(char *s)
+{
+
+}
+2-strncpy.o/    0           0     0     644     210       `
+#include "main.h"
+
+/**
+ * _strncpy - Locates a substring.
+ * @dest: The string to be searched.
+ * @src: second string
+ * @n: an integer
+ * Return: nothing
+ */
+
+char *_strncpy(char *dest, char *src, int n)
+{
+
+}
+3-islower.o/    0           0     0     644     241       `
+#include "main.h"
+
+/**
+ * _islower - checks if a character is lowercase
+ * @c: the character to be checked
+ * Return: 1 if lowercase and 0 otherwise.
+ */
+
+int _islower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
+
+}
+
+3-strcmp.o/     0           0     0     644     175       `
+#include "main.h"
+
+/**
+ * _strcmp - Locates a substring.
+ * @s1: The string to be searched.
+ * @s2: second string
+ * Return: nothing
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+
+}
+
+3-strspn.o/     0           0     0     644     545       `
+#include "main.h"
+
+/**
+ * _strspn - Gets the length of a prefix substring.
+ * @s: The string to be searched.
+ * @accept: The prefix to be measured.
+ *
+ * Return: The number of bytes in s which
+ *         consist only of bytes from accept.
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+	unsigned int bytes = 0;
+	int index;
+
+	while (*s)
+	{
+		for (index = 0; accept[index]; index++)
+		{
+			if (*s == accept[index])
+			{
+				bytes++;
+				break;
+			}
+
+			else if (accept[index + 1] == '\0')
+				return (bytes);
+		}
+
+		s++;
+	}
+
+	return (bytes);
+}
+
+4-isalpha.o/    0           0     0     644     180       `
+#include "main.h"
+
+/**
+ * _isaplha - checks if a character is lowercase
+ * @c: the character to be checked
+ * Return: 1 if lowercase and 0 otherwise.
+ */
+
+int _isalpha(int c)
+{
+
+}
+4-strpbrk.o/    0           0     0     644     468       `
+#include "main.h"
+
+/**
+ * _strpbrk - Searches a string for any of a set of bytes.
+ * @s: The string to be searched.
+ * @accept: The set of bytes to be searched for.
+ *
+ * Return: If a set is matched - a pointer to the matched byte.
+ *         If no set is matched - NULL.
+ */
+char *_strpbrk(char *s, char *accept)
+{
+	int index;
+
+	while (*s)
+	{
+		for (index = 0; accept[index]; index++)
+		{
+			if (*s == accept[index])
+				return (s);
+		}
+
+		s++;
+	}
+
+	return ('\0');
+}
+5-strstr.o/     0           0     0     644     683       `
+#include "main.h"
+
+/**
+ * _strstr - Locates a substring.
+ * @haystack: The string to be searched.
+ * @needle: The substring to be located.
+ *
+ * Return: If the substring is located - a pointer to the beginning
+ *                                       of the located substring.
+ *         If the substring is not located - NULL.
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+	int index;
+
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack)
+	{
+		index = 0;
+
+		if (haystack[index] == needle[index])
+		{
+			do {
+				if (needle[index + 1] == '\0')
+					return (haystack);
+
+				index++;
+
+			} while (haystack[index] == needle[index]);
+		}
+
+		haystack++;
+	}
+
+	return ('\0');
+}
+
+6-abs.o/        0           0     0     644     172       `
+#include "main.h"
+
+/**
+ * _abs - checks if a character is lowercase
+ * @n: the character to be checked
+ * Return: 1 if lowercase and 0 otherwise.
+ */
+
+int _abs(int n)
+{
+
+}
+9-strcpy.o/     0           0     0     644     198       `
+#include "main.h"
+
+/**
+ * _strcpy - Locates a substring.
+ * @dest: The string to be searched.
+ * @src: the second dtring
+ * Return: Always the integer
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+
+}
+_putchar.o/     0           0     0     644     247       `
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+

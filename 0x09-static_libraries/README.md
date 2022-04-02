@@ -1,1 +1,1 @@
-static library
+more functions to code
