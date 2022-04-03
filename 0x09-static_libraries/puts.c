@@ -15,5 +15,6 @@ void _puts(char *s)
 
 int main(void)
 {
+	_puts("print this");
 	return (0);
 }

@@ -1,16 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _puts - Locates a substring.
+ * _strlen - Locates a substring.
  * @s: The string to be searched.
  *
  * Return: nothing
  */
 
-void _puts(char *s)
+int _strlen(char *s)
 {
-	puts(s);
+	return (0);
 }
 
 int main(void)
