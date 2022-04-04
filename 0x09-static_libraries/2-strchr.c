@@ -20,8 +20,3 @@ char *_strchr(char *s, char c)
 
 	return ('\0');
 }
-
-int main(void)
-{
-	return (0);
-}

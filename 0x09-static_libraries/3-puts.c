@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _puts - Locates a substring.
@@ -10,10 +9,13 @@
 
 void _puts(char *s)
 {
-	puts(s);
-}
+	int i;
 
-int main(void)
-{
-	return (0);
+	for (i = 0; s[i] != 0; i++)
+	{
+		_putchar(s[i]);
+	}
+
+	_putchar('\n');
+
 }

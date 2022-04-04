@@ -37,8 +37,3 @@ char *_strstr(char *haystack, char *needle)
 
 	return ('\0');
 }
-
-int main(void)
-{
-	return (0);
-}

@@ -5,7 +5,6 @@
  * @c: the character to be checked
  * Return: 1 if lowercase and 0 otherwise.
  */
-
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
@@ -13,9 +12,4 @@ int _isupper(int c)
 	else
 		return (0);
 
-}
-
-int main(void)
-{
-	return (0);
 }

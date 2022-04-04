@@ -32,8 +32,3 @@ unsigned int _strspn(char *s, char *accept)
 
 	return (bytes);
 }
-
-int main(void)
-{
-	return (0);
-}

@@ -20,9 +20,3 @@ char *_memset(char *s, char c, unsigned int n)
 
 	return (memory);
 }
-
-
-int main(void)
-{
-	return (0);
-}
